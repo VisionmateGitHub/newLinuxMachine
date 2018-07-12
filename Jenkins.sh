@@ -49,21 +49,18 @@ sudo wget https://github.com/grails/grails-core/releases/download/v2.4.4/grails-
 sudo wget https://github.com/grails/grails-core/releases/download/v2.5.6/grails-2.5.6.zip -P /opt/
 sudo wget https://github.com/grails/grails-core/releases/download/v3.3.0/grails-3.3.0.zip -P /opt/
 sudo wget https://github.com/grails/grails-core/releases/download/v3.3.4/grails-3.3.4.zip -P /opt/
-
-
+echo --- Unzipping all zips ---
 sudo unzip grails*.zip
 
-# not usefull in this case
+#not usefull in this case
 #cd /opt/
 #sudo bash -c 'export SDKMAN_DIR="/opt/sdkman" && curl -s "https://get.sdkman.io" | bash'
 #source "/opt/sdkman/bin/sdkman-init.sh"
-
 #yes | sdk install grails 2.3.11
 #no | sdk install grails 2.4.4
 #no | sdk install grails 2.5.6
 #no | sdk install grails 3.3.0
 #no | sdk install grails 3.3.4
-#
 
 cd /opt/
 sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
